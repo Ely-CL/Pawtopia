@@ -1,0 +1,288 @@
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- ESTILOS GENERALES -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+body {
+    background-color: #f7f7f7;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    color: black;
+}
+
+main, footer {
+    width: 70%;
+    margin: auto;
+}
+
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- NAVEGACION -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.logotexto {
+    display: flex;
+    justify-content: center;
+    align-items: anchor-center;
+    margin-bottom: -10px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.navigationBarList {
+    list-style-type: none;
+    align-self: flex-end;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.navigationBarList li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.enlace{
+    background-color: #d6c9bd;
+    text-decoration: none;
+    color: #786755;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.activo {
+    background-color:#786755;
+    color: #d6c9bd;
+}
+
+.container, .contacto {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 5% 0;
+}
+
+.container *{
+    box-sizing: border-box;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- PRESUPUESTO -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.lista_principal {
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.lista_principal li{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.lista_principal > li:not(:last-child){
+    margin-bottom: 20px;
+}
+
+.lista_principal li label, .contacto-texto{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.lista_principal >li >label{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+
+.lista_principal > li > label + *{
+    flex: 1 0 220px;
+}
+
+.lista_principal li input, .lista_principal li textarea{
+    padding: 15px;
+    border: none;
+}
+
+.lista_principal li.liButtons input{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 16px;
+    border: none;
+    background-color: #786755;
+    color: #d6c9bd;
+    border-radius: 10px;
+}
+
+.tprincipal {
+    width: 50%;
+    margin: auto;
+}
+
+.tsecdundaria {
+    width: 50%;
+    margin: -10px auto 50px auto;
+}
+
+.redimensionar2 {
+    width: 300px;
+    height: auto;
+}
+
+.tsecdundaria td{
+    background: #ebebeb;
+    padding: 8px;
+    box-shadow: 2px 5px 15px black;
+}
+
+.tsecdundaria td p, .titulo{
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo {
+    white-space: nowrap;
+}
+
+.subtit {
+    white-space: nowrap;
+    margin-top: -15px;
+    letter-spacing: 5px;
+    text-transform: lowercase;
+}
+
+.redimensionar {
+    width: 700px;
+    height: auto;
+}
+
+.politica {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- INDEX -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+#principal, #Opiniones {
+    background: #FAF2E7;
+    padding: 20px;
+}
+
+#principal h2, #quieres-somos h2, #Opiniones h2, .contacto h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+#principal h3, #quieres-somos h3 {
+    justify-self: center;
+    text-transform: uppercase;
+    margin-top: -20px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.encabezado .perroygato {
+    width: 600px;
+    height: auto;
+}
+
+.encabezado p {
+    width: 200px;
+    text-align: justify;
+}
+
+#quieres-somos {
+    background: #DAB998;
+    margin-top: -20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.Gatoacostado {
+    margin-top: -100px;
+    margin-bottom: -40px;
+}
+
+#quieres-somos h3 {
+    font-size: 20px;
+    margin-bottom: -1px;
+}
+
+#quieres-somos p {
+    width: 600px;
+    text-align: justify;
+    margin: auto;
+    font-size: 17px;
+}
+
+.cajaopiniones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perrocepillo {
+    width: 400px;
+    height: auto;
+}
+
+#Opiniones {
+    padding-bottom: 0;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- FOOTER -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+footer {
+    text-align: end;
+}
+
+footer img {
+    width: 30px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.redes-sociales {
+    padding-bottom: 20px;
+}
+
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- CONTACTO -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+
+.contactoinfo {
+    display: flex;
+}
+
+.contacto-texto {
+    margin-left: 20px;
+}
