@@ -9,6 +9,8 @@ body {
 header {
     text-align: center;
     color: black;
+    background-color: #fff;
+    padding: 10px;
 }
 
 main, footer {
@@ -199,6 +201,7 @@ h1 {
     letter-spacing: 3px;
     font-size: 15px;
     font-weight: normal;
+    font-family: calibri;
 }
 
 .encabezado {
@@ -232,6 +235,7 @@ h1 {
 #quieres-somos h3 {
     font-size: 20px;
     margin-bottom: -1px;
+    font-family: times new roman;
 }
 
 #quieres-somos p {
@@ -261,7 +265,9 @@ h1 {
 -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 footer {
-    text-align: end;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 0px;
 }
 
 footer img {
