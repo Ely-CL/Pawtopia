@@ -176,6 +176,8 @@ button:hover, input[type="submit"]:hover {
 
 .lista_principal > li > label + * {
   flex: 1 0 220px;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .presupuesto h2 {
