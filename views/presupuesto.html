@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pawtopia</title>
+        <meta name="descripcion" content="Guardería y spa para mascotas">
+         <!-- FAVICON -->
+        <link rel="icon" type="img/png" href="../assets/img/animales.png">
+         <!-- CSS -->
+        <link rel="stylesheet" href="../css/estilos.css">
+        <!-- FUENTES-->
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        
+        
+    </head>
+    <body>
+        <header>
+             <!-- HEADER -->
+            <div class="logotexto">
+                <img src="../assets/img/animales.png" alt="logotipo" class="logo" width="512" height="512">
+                <h1>Pawtopia</h1>
+            </div>
+            <nav class="navigationBar">
+                <ul class="navigationBarList">
+                    <li>
+                        <a class="enlace" href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="../views/galeria.html">Galeria</a>
+                    </li>
+                    <li>
+                        <a class="enlace activo" href="#">Presupuesto</a>
+                    </li>
+                    <li>
+                        <a class="enlace" href="../views/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         <!-- CUERPO -->
+        <div class="presupuesto">
+            <form id="myForm" name="myForm" action="#" method="get" target="_self">
+                <h2>Formulario</h2>
+                <ul class="lista_principal">
+                    <li>
+                        <label for="first-name">Nombre</label>
+                        <input type="text" id="first-name" name="first-name"
+                        placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
+                        title="Escriba sólo letras entre 3 y 15 caractéres" required>
+                    </li>
+                     <li>
+                        <label for="last-name">Apellido</label>
+                        <input type="text" id="last-name" name="last-name"
+                        placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,40}"
+                        title="Escriba sólo letras entre 3 y 40 caractéres" required>
+                    </li>
+                    <li>
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email"
+                        placeholder="Escriba su email" pattern="[a-zA-z0-9_-.]+@[a-z0-9._-]+\.[a-z]{2,4}"
+                        title="Escriba su correo electrónico" required>
+                    </li>
+                     <li>
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono"
+                        placeholder="Escriba su teléfono" pattern="[0-9]{9}"
+                        title="Escriba los nueve números de su teléfono móvil" required>
+                    </li>
+                </ul>
+                <h2>Presupuesto</h2>
+                <ul class="lista_principal">
+                    <li>
+                        <label for="producto">Producto</label>
+                        <select id="producto" name="producto" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="baño" data-precio="20">Baño - 20 €</option>
+                            <option value="spa" data-precio="35">Spa - 35 €</option>
+                            <option value="peluqueria" data-precio="25">Peluquería - 25 €</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <label for="plazo">Plazo (días)</label>
+                        <input type="number" id="plazo" name="plazo" min="1" max="30" value="7" required>
+                    </li>
+                    <li>
+                        <p class="descuento-texto">* Descuento del 10% si el plazo es menor o igual a 7 días</p>
+                    </li>
+                    <li>
+                        <label>Extras</label>
+                        <div>
+                            <input type="checkbox" id="aromatizante" name="extras" value="5">
+                            <label for="aromatizante">Aromatizante (+5€)</label><br>
+                            <input type="checkbox" id="masaje" name="extras" value="10">
+                            <label for="masaje">Masaje relajante (+10€)</label><br>
+                            <input type="checkbox" id="uñas" name="extras" value="8">
+                            <label for="uñas">Corte de uñas (+8€)</label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <label for="presupuesto">Presupuesto total</label>
+                        <input type="text" id="presupuesto" name="presupuesto" readonly value="0 €">
+                    </li>
+                </ul>
+
+                <ul class="prebuttons">
+                    <li class="liButtons">
+                        <input type="reset" value="Borrar">
+                        <input type="submit" value="Enviar">
+                    </li>
+                </ul>
+                <h2>Politica</h2>
+                <div class="politica">
+                    <input type="checkbox" value="400" name="politica" id="politica" required><label for="politica"> He leído y acepto la política de privacidad</label>
+                </div>
+            </form>
+        </div>   
+        <footer>
+             <!-- PIE -->
+            <p>&copy; 2025 Pawtopia. Todos los derechos reservados.</p>
+            <p>C/ Serero Ochoa, Avilés | +34 654 30 55 12</p>
+                <div class="redes-sociales">
+                    <a href="www.facebook.com"><img src="../assets/img/Facebook.png" alt="Icono de Facebook" class="facebook" width="512" height="512"></a>
+                    <a href="www.instagram.com"><img src="../assets/img/instagram.png" alt="Icono de Instagram" class="instagram" width="512" height="512"></a>
+                    <a href="www.x.com"><img src="../assets/img/twitter.png" alt="Icono de Twitter" class="twitter" width="460" height="460"></a>
+                    <a href="www.youtube.com"><img src="../assets/img/youtube.png" alt="Icono de Youtube" class="youtube" width="512" height="512"></a>
+                </div>
+        </footer>
+         <!-- JAVA -->
+        <script src="../js/javascript.js"></script>
+    </body>
+</html>
