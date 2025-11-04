@@ -8,6 +8,9 @@
         <link rel="icon" type="img/png" href="../assets/img/animales.png">
          <!-- CSS -->
         <link rel="stylesheet" href="../css/estilos.css">
+        <!-- FUENTES-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        
         
     </head>
     <body>
@@ -23,7 +26,7 @@
                         <a class="enlace" href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a class="enlace activo" href="#">Portafolio</a>
+                        <a class="enlace activo" href="#">Galeria</a>
                     </li>
                     <li>
                         <a class="enlace" href="../views/presupuesto.html">Presupuesto</a>
@@ -36,35 +39,17 @@
         </header>
         <main>
              <!-- CUERPO -->
-            <table class="tprincipal">
-                <tbody>
-                    <tr>
-                        <td>
-                            <p class="titulo">Mimos, juegos y cuidados...</p>
-                            <p class="subtit">¡Puro amor peludo!</p>
-                        </td>
-                        <td>
-                            <img class="redimensionar" src="../assets/img/Perro1.png" alt="Perro con espuma en la cabeza" width="754" height="678">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="tsecdundaria">
-                <tr>
-                    <td class="cajatexto">
-                        <img class="redimensionar2" src="../assets/img/Perro2.png" alt="Perro siendo bañado" width="521" height="521">
-                        <p>Baño</p>
-                    </td>
-                     <td>
-                         <img class="redimensionar2" src="../assets/img/Perro3.png" alt="Perro relajandose con pepinos en los ojos" width="736" height="736">
-                        <p>Spa</p>
-                    </td>
-                     <td>
-                         <img class="redimensionar2" src="../assets/img/Perro4.png" alt="Perro al que le estan cortando el pelo" width="418" height="418">
-                        <p>Peluquería</p>
-                    </td>
-                </tr>
-            </table>
+            <section id="galeria">
+                <h2>Nuestra galería</h2>
+                <div id="contenedor-galeria" class="galeria-grid"></div>
+
+            <!-- Lightbox -->
+            <div id="lightbox" class="lightbox">
+                <span id="cerrar">&times;</span>
+                <img id="imagen-ampliada" src="../assets/img/no-image-available.webp" alt="Imagen de galería">
+                <p id="titulo-imagen"></p>
+            </div>
+            </section>
         </main>
         <footer>
              <!-- PIE -->

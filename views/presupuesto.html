@@ -8,6 +8,9 @@
         <link rel="icon" type="img/png" href="../assets/img/animales.png">
          <!-- CSS -->
         <link rel="stylesheet" href="../css/estilos.css">
+        <!-- FUENTES-->
+         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+        
         
     </head>
     <body>
@@ -23,7 +26,7 @@
                         <a class="enlace" href="../index.html">Inicio</a>
                     </li>
                     <li>
-                        <a class="enlace" href="../views/portafolio.html">Portafolio</a>
+                        <a class="enlace" href="../views/galeria.html">Galeria</a>
                     </li>
                     <li>
                         <a class="enlace activo" href="#">Presupuesto</a>
@@ -35,14 +38,21 @@
             </nav>
         </header>
          <!-- CUERPO -->
-        <div class="container">
+        <div class="presupuesto">
             <form id="myForm" name="myForm" action="#" method="get" target="_self">
+                <h2>Formulario</h2>
                 <ul class="lista_principal">
                     <li>
                         <label for="first-name">Nombre</label>
                         <input type="text" id="first-name" name="first-name"
                         placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,15}"
                         title="Escriba sólo letras entre 3 y 15 caractéres" required>
+                    </li>
+                     <li>
+                        <label for="last-name">Apellido</label>
+                        <input type="text" id="last-name" name="last-name"
+                        placeholder="Escriba su nombre" pattern="[A-Z a-z]{3,40}"
+                        title="Escriba sólo letras entre 3 y 40 caractéres" required>
                     </li>
                     <li>
                         <label for="email">Correo Electrónico</label>
@@ -56,15 +66,51 @@
                         placeholder="Escriba su teléfono" pattern="[0-9]{9}"
                         title="Escriba los nueve números de su teléfono móvil" required>
                     </li>
+                </ul>
+                <h2>Presupuesto</h2>
+                <ul class="lista_principal">
                     <li>
-                        <label for="mensaje">Información</label>
-                        <textarea rows="6" id ="mensaje" placeholder="Solicite más información"></textarea>
+                        <label for="producto">Producto</label>
+                        <select id="producto" name="producto" required>
+                            <option value="">Seleccione un servicio</option>
+                            <option value="baño" data-precio="20">Baño - 20 €</option>
+                            <option value="spa" data-precio="35">Spa - 35 €</option>
+                            <option value="peluqueria" data-precio="25">Peluquería - 25 €</option>
+                        </select>
                     </li>
+
+                    <li>
+                        <label for="plazo">Plazo (días)</label>
+                        <input type="number" id="plazo" name="plazo" min="1" max="30" value="7" required>
+                    </li>
+                    <li>
+                        <p class="descuento-texto">* Descuento del 10% si el plazo es menor o igual a 7 días</p>
+                    </li>
+                    <li>
+                        <label>Extras</label>
+                        <div>
+                            <input type="checkbox" id="aromatizante" name="extras" value="5">
+                            <label for="aromatizante">Aromatizante (+5€)</label><br>
+                            <input type="checkbox" id="masaje" name="extras" value="10">
+                            <label for="masaje">Masaje relajante (+10€)</label><br>
+                            <input type="checkbox" id="uñas" name="extras" value="8">
+                            <label for="uñas">Corte de uñas (+8€)</label>
+                        </div>
+                    </li>
+
+                    <li>
+                        <label for="presupuesto">Presupuesto total</label>
+                        <input type="text" id="presupuesto" name="presupuesto" readonly value="0 €">
+                    </li>
+                </ul>
+
+                <ul class="prebuttons">
                     <li class="liButtons">
                         <input type="reset" value="Borrar">
                         <input type="submit" value="Enviar">
                     </li>
                 </ul>
+                <h2>Politica</h2>
                 <div class="politica">
                     <input type="checkbox" value="400" name="politica" id="politica" required><label for="politica"> He leído y acepto la política de privacidad</label>
                 </div>

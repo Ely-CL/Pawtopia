@@ -1,0 +1,19 @@
+{
+  "imagenes": [
+    {
+      "src": "../assets/img/Perro2.png",
+      "alt": "Perro siendo bañado",
+      "titulo": "Baño"
+    },
+    {
+      "src": "../assets/img/Perro3.png",
+      "alt": "Perro relajándose con pepinos en los ojos",
+      "titulo": "Spa"
+    },
+    {
+      "src": "../assets/img/Perro4.png",
+      "alt": "Perro al que le están cortando el pelo",
+      "titulo": "Peluquería"
+    }
+  ]
+}

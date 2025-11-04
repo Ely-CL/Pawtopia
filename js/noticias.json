@@ -1,0 +1,32 @@
+[
+  {
+    "titulo": "Nueva línea de tratamientos naturales",
+    "fecha": "25/10/2025",
+    "descripcion": "Nuestro spa incorpora productos 100% ecológicos y sin parabenos para el cuidado del pelaje de tu perro."
+  },
+  {
+    "titulo": "Colaboración con protectoras locales",
+    "fecha": "22/10/2025",
+    "descripcion": "Pawtopia colabora con la protectora 'Huellas Felices' ofreciendo baños gratuitos a perros en adopción."
+  },
+  {
+    "titulo": "Descuento especial para nuevos clientes",
+    "fecha": "20/10/2025",
+    "descripcion": "Durante este mes, disfruta de un 20% de descuento en tu primera sesión de baño y corte."
+  },
+  {
+    "titulo": "Evento solidario 'Baños con causa'",
+    "fecha": "18/10/2025",
+    "descripcion": "Este sábado organizamos una jornada solidaria: todos los beneficios se destinarán a la esterilización de perros callejeros."
+  },
+    {
+    "titulo": "Nuevo servicio de piscina terapéutica",
+    "fecha": "07/10/2025",
+    "descripcion": "Incorporamos una piscina especialmente diseñada para ejercicios de hidroterapia. Ideal para perros con problemas articulares o en proceso de recuperación física."
+  },
+    {
+    "titulo": "Campaña de otoño: baño y cepillado con descuento",
+    "fecha": "01/10/2025",
+    "descripcion": "Durante todo octubre, disfruta de un 20% de descuento en baños y cepillados. Mantén el pelaje de tu peludo limpio y brillante antes del invierno."
+  }
+]
